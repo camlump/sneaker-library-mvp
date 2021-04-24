@@ -1,0 +1,35 @@
+.single_sneaker {
+    margin: 15px;
+    width: 195x;
+    height: 315px;
+    text-align: center;
+    border: 1px solid #fff;
+    background: #fff;
+  
+}
+
+.single_sneaker .sneaker_name {
+    font-family: "Source Sans Pro";
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.single_sneaker p {
+    font-family: "Source Sans Pro";
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.single_sneaker .img_container {
+    position: relative;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  width: 160px;
+  height: 160px;
+}
+
+.single_sneaker .img_container img {
+    max-width: 100%;
+    max-height: 100%;
+}

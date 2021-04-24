@@ -1,0 +1,55 @@
+.sneakerList-container {
+    background: #fff!important;
+}
+
+.sneakerlist {
+    margin-left: 250px;
+    margin-right: 250px;
+    padding: auto 50px;
+    display: grid !important;
+    grid-template-columns: .75fr  .75fr  .75fr  .75fr;
+  
+
+}
+
+
+
+/* SEARCHBAR CSS */
+
+
+.searchBar__container {
+    height: 50vh;
+    background: url("../images/taylor-smith-aDZ5YIuedQg-unsplash.jpg");
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(20%);
+  
+  }
+  
+  .searchBar_field {
+    margin-top: 90px;
+    text-align: center;
+  }
+  
+  .searchBar_field .searchText_phrase h3 {
+      font-family: "Source Sans Pro";
+      font-size: 32px;
+      color: #fff !important;
+      background: #111;
+  }
+  
+  .color {
+      color: #4db8ff;
+  }
+
+  .search_input > input {
+    
+    background: #fff;
+    padding: .5em 4em;
+    border: 2px solid #e5e5e5;
+    border-radius: 10px;
+}

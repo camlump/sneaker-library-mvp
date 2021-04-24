@@ -1,0 +1,28 @@
+.navbar {
+    background: #fff !important;
+    padding: 1em 8em;
+    border-bottom: 2px solid #ddd !important ;
+}
+
+.navbar .navbar-brand {
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.navbar .navbar-brand .color {
+    color: #4db8ff;
+}
+
+.navbar .navbar-nav .nav-link {
+    font-family: "Source Sans Pro";
+    font-weight: 400;
+    transition: .4s;
+    font-size: 18px;
+    color: #111;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color:   #4db8ff !important;
+}
+

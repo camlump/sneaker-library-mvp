@@ -1,0 +1,43 @@
+import React from 'react'
+import { Link } from 'react-router-dom';
+import '../stylesheets/navbar.css'
+
+const Navbar = () => {
+  return (
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <Link to="/" class="navbar-brand" href="#">Sneaker<span className="color">Lib</span></Link>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+     
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Brands
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        
+        <li class="nav-item">
+          <Link to="/about" class="nav-link">About</Link>
+        </li>
+        
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+      
+    </div>
+  )
+}
+
+
+export default Navbar;
