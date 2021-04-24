@@ -29,9 +29,10 @@ const SideBarNav = () => {
             <div className="link-box">
               <ul>
                 <li>
-                  <a href={link.link} target="_blank">
+                  {/* <a href={link.link} target="_blank">
                     <h3 style={linkStyle}>{link.name}</h3>
-                  </a>
+                  </a> */}
+                 <a href={link.link} target="_blank"><img style={logos} src={link.icon} alt=""/></a> 
                   
                 </li>
               </ul>
@@ -60,6 +61,12 @@ const SideBarNav = () => {
     </div>
   );
 };
+
+
+const logos = {
+  width: "90px",
+  
+}
 
 const sideNavStyle = {
   height: "100vh",

@@ -1,5 +1,9 @@
 import FC from './images/flightclub.jpeg'
 
+import stockx from './images/stockx-vector-logo.png'
+import flightClub from './images/flightclub.jpeg'
+import goat from './images/GOAT.png'
+import grailed from './images/download.png'
 
 export  const sneakerSiteData = {
    
@@ -7,19 +11,24 @@ export  const sneakerSiteData = {
     {
         name: 'Flight Club',
         link: 'https://www.flightclub.com/',
-        icon: './images/flightclub.jpeg'
+        icon: flightClub
     },
     {
         name: 'StockX',
-        link: 'https://stockx.com/'
+        link: 'https://stockx.com/',
+        icon:  stockx
+        
+
     },
     {
         name: 'GOAT',
-        link: 'https://www.goat.com/'
+        link: 'https://www.goat.com/',
+        icon: goat
     },
     {
         name: 'Grailed',
-        link: 'https://www.grailed.com/'
+        link: 'https://www.grailed.com/',
+        icon: grailed
     },
     {
         name: 'Stadium Goods',

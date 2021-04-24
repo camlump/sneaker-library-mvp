@@ -13,20 +13,17 @@ const Navbar = () => {
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
+
+      <li className="nav-item">
+            <Link to="/Brands" className="nav-link">Brands</Link>
+        </li>
      
-      <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Brands
-          </a>
-          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+        <li className="nav-item">
+            <Link to="/SOTD" className="nav-link">SOTD</Link>
         </li>
         
-        <li class="nav-item">
-          <Link to="/about" class="nav-link">About</Link>
+        <li className="nav-item">
+          <Link to="/about" className="nav-link">About</Link>
         </li>
         
         

@@ -1,0 +1,22 @@
+
+.banner {
+    height: 500px;
+    display: flex;
+    background: #111;
+}
+
+.textBox {
+    margin: 60px;
+    color: #fff ;
+}
+
+.imgBox {
+    margin: 40px;
+    width: 700px;
+    height: 500px;
+}
+
+.imgBox img {
+    width: 100%;
+    height: 100%;
+}
