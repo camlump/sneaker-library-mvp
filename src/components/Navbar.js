@@ -15,7 +15,7 @@ const Navbar = () => {
       <ul class="navbar-nav ms-auto">
 
       <li className="nav-item">
-            <Link to="/Brands" className="nav-link">Brands</Link>
+            <Link to="/brands" className="nav-link">Brands</Link>
         </li>
      
         <li className="nav-item">

@@ -1,0 +1,27 @@
+
+
+.container .title-container{
+    display: ;
+    text-align: center;
+    height: 200px;
+   
+    
+}
+
+.container .title-container h2 {
+    font-family: "Source Sans Pro";
+    font-weight: 700;
+}
+
+.brand-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+

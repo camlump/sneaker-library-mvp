@@ -6,19 +6,18 @@ import SearchBar from './components/SearchBar';
 import Navbar from './components/Navbar';
 import SneakerId from './components/SneakerId';
 import About from './components/About'
+import Brand from './components/Brand'
 
 
  const App = () => {
 
 
-       
-
-     
     return (
         <Router>
                     <Navbar />
             <Switch>
                 <Route exact path="/about" component={About} />
+                <Route exact path="/brands" component={Brand}/>
                 <Route exact path="/">
                    
                     <Home />
@@ -26,6 +25,8 @@ import About from './components/About'
                 <Route exact path="/:id">
                 <SneakerId  />
                 </Route>
+               
+               
                 
                 
             </Switch>
