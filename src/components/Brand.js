@@ -36,7 +36,9 @@ const Brand = () => {
             <ul style={font} className="brand_list">
                 {brands.map((brand)=>{
                     return(
-                    <li>{brand}</li>
+                        <ul key={brand}>  
+                            <li >{brand}</li>
+                        </ul>
                     )
                 })}
             </ul>

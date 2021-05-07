@@ -29,10 +29,10 @@ const SideBarNav = () => {
             <div className="link-box">
               <ul>
                 <li>
-                  {/* <a href={link.link} target="_blank">
-                    <h3 style={linkStyle}>{link.name}</h3>
-                  </a> */}
-                 <a href={link.link} target="_blank"><img style={logos} src={link.icon} alt=""/></a> 
+                  <a href={link.link} target="_blank">
+                    <h3>{link.name}</h3>
+                  </a>
+                 {/* <a href={link.link} target="_blank"><img style={logos} src={link.icon} alt=""/></a>  */}
                   
                 </li>
               </ul>
@@ -48,7 +48,7 @@ const SideBarNav = () => {
             <ul>
               <li>
                 <a href={link.link} target="_blank">
-                  <h3 style={linkStyle}>{link.name}</h3>
+                  <h3>{link.name}</h3>
                 </a>
                
               </li>

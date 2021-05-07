@@ -1,7 +1,27 @@
 .navbar {
+    border-bottom: 2px solid #ddd !important;
+
+}
+
+.navbar .navbar-brand {
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    
+}
+
+.navbar .navbar-nav .nav-link{
+    font-family: "Source Sans Pro";
+    color: #111;
+    font-weight: 400;
+
+}
+
+@media screen and (min-width: 700px){
+
+.navbar {
     background: #fff !important;
     padding: 1em 8em;
-    border-bottom: 2px solid #ddd !important ;
+    
 }
 
 .navbar .navbar-brand {
@@ -26,3 +46,5 @@
     color:   #4db8ff !important;
 }
 
+
+}

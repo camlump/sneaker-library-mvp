@@ -1,6 +1,12 @@
 
+
 .brand-box {
     text-align: center;
+}
+
+.brand-box h3 {
+    font-family: "Source Sans Pro";
+    font-weight: 700;
 }
 .link-box {
     text-align: left;
@@ -14,14 +20,29 @@ ul {
     
 }
 
+li {
+  
+    transition: 0.5s ease-in-out;
+}
+
+li h3:hover  {
+    background: black;
+    color: white;
+    
+}
+
+a {
+    text-decoration:none;
+}
+
 /* ul li a{
     text-decoration: none;
 } */
 
-h3{
-    margin-top: 20px;
+.link-box h3{
+    color: #111;
+    font-size: 16px;
     font-family: "Source Sans Pro";
-    font-size: 22px;
-    font-weight: 700;
-    margin-left: 12px;
+    text-decoration: none;
+    font-weight: 600;
 }
