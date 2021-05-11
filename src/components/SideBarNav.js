@@ -20,7 +20,7 @@ const SideBarNav = () => {
   // }, [])
 
   return (
-    <div style={sideNavStyle}>
+    <div className="sideNavStyle">
       <div className="brand-box">
         <h3>Websites to Buy</h3>
 

@@ -3,6 +3,7 @@ import '../stylesheets/sneaker.css';
 import placeholder from '../images/cooming.jpeg';
 import { Link } from 'react-router-dom';
 
+
 const SingleSneaker = ({ id, name, shoe, img }) => {
   return (
  

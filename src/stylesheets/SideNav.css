@@ -1,5 +1,20 @@
 
 
+
+@media screen and(min-width:700px) {
+    .sideNavStyle {
+       
+        height: 100vh;
+        width: 250px;
+        background: #fff;
+        top: 60vh;
+        position: absolute;
+        border-right: 1px solid #eee;
+        left: 0;
+        text-align: left;
+        z-index: 1;
+    }
+    
 .brand-box {
     text-align: center;
 }
@@ -45,4 +60,6 @@ a {
     font-family: "Source Sans Pro";
     text-decoration: none;
     font-weight: 600;
+}
+
 }

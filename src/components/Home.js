@@ -6,11 +6,12 @@ import placeholder from '../images/cooming.jpeg'
 // import SearchBar from '../components/SearchBar';
 import SingleSneaker from './SingleSneaker';
 import SideBarNav from './SideBarNav'
+import {  PulseLoader } from 'react-spinners';
 
 const Home = () => {
 // const [data, SetData] = useState([]);
   const [sneakers, setSneakerData] = useState([]);
-
+  const [loading, setLoading] = useState(false)
   const [filtered, setFiltered] = useState([]);
   const [result, setResult] = useState("");
 
@@ -19,6 +20,7 @@ const Home = () => {
       api.getData().then((response) => {
         setSneakerData(response.data.results);
         setFiltered(response.data.results);
+        setLoading(true)
         console.log(response.data.results);
         
       });
@@ -39,8 +41,11 @@ const Home = () => {
 }
 
   return (
+    <>
+      {loading ? (
     <div className="sneakerList-container">
-      <SideBarNav />
+    
+    
           <div className="searchBar__container">
             <div className="searchBar_field">
                 <div className="searchText_phrase">
@@ -57,14 +62,29 @@ const Home = () => {
         <div className="sneakerlist">
           {sneakers.map((sneaker) => {
             return (
-                <SingleSneaker key={sneaker.id} id={sneaker.id} name={sneaker.name} shoe={sneaker.shoe} img={sneaker.media.imageUrl}/>
-          
-            );
-          })}
+              <SingleSneaker key={sneaker.id} id={sneaker.id} name={sneaker.name} shoe={sneaker.shoe} img={sneaker.media.imageUrl}/>
+              
+              );
+            })}
         </div>
       )}
+      <SideBarNav />
+          
+       
     </div>
+      ) : ( <PulseLoader style={{flex: 1,
+        marginTop:240,
+        justifyContent: 'center.',
+        alignItems:'center'}} />)}
+    </>
+    
   );
 };
 
+const spinnerStyle = {
+  flex: 1,
+  marginTop:240,
+  justifyContent: 'center',
+  alignItems:'center'
+}
 export default Home;
