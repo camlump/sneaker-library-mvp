@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../stylesheets/SideNav.css";
+// import "../stylesheets/SideNav.css";
 import api from "../api";
 import { Link } from "react-router-dom";
 
@@ -20,7 +20,7 @@ const SideBarNav = () => {
   // }, [])
 
   return (
-    <div className="sideNavStyle">
+    <div const={sideNavStyle}>
       <div className="brand-box">
         <h3>Websites to Buy</h3>
 
@@ -69,11 +69,12 @@ const logos = {
 }
 
 const sideNavStyle = {
+  position: "absolute",
   height: "100vh",
   width: "250px",
   background: "#fff",
   top: "60vh",
-  position: "absolute",
+  
   borderRight: " 1px solid #eee",
   left: 0,
   textAlign: "left",

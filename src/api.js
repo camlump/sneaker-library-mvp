@@ -7,7 +7,7 @@ getData: () =>
 axios({
   method: 'GET',
   url: 'https://v1-sneakers.p.rapidapi.com/v1/sneakers',
-  params: {limit: '24'},
+  params: {limit: '50'},
   headers: {
     'x-rapidapi-key':  process.env.REACT_APP_RAPID_API_KEY,
     'x-rapidapi-host': 'v1-sneakers.p.rapidapi.com'
